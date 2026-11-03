@@ -1,0 +1,29 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Install Next.js dependencies",
+			"type": "shell",
+			"command": "npm",
+			"args": ["install"],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Audit and fix npm vulnerabilities",
+			"type": "shell",
+			"command": "npm",
+			"args": ["audit", "fix"],
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Build static Next.js export",
+			"type": "shell",
+			"command": "npm",
+			"args": ["run", "build"],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

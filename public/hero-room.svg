@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
+  <title id="title">Living room painting scene</title>
+  <desc id="desc">Architectural illustration of a light-filled living room with protected furniture and crisp trim.</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eee7d8"/><stop offset="1" stop-color="#c9c1b2"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#736e64"/><stop offset="1" stop-color="#2b2a28"/></linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5f0e5"/><stop offset="1" stop-color="#a9a397"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="17"/></filter>
+  </defs>
+  <rect width="1200" height="820" fill="#111113"/>
+  <path d="M0 0h1200v596H0z" fill="url(#wall)"/>
+  <path d="M0 0h124v596H0z" fill="#d3ccbd"/>
+  <path d="M799 0h401v596H799z" fill="#dfd8ca"/>
+  <path d="M0 596h1200v224H0z" fill="url(#floor)"/>
+  <path d="M0 580h1200v18H0z" fill="#f3eddf"/>
+  <ellipse cx="637" cy="730" rx="385" ry="44" fill="#000" opacity=".3" filter="url(#blur)"/>
+  <g stroke="#6e6c65" stroke-width="12">
+    <path d="M275 88h344v342H275z" fill="#222326"/>
+    <path d="M296 109h302v300H296z" fill="#e9e9df" stroke="#ece7da" stroke-width="8"/>
+    <path d="M447 110v298M297 260h300" fill="none" stroke="#c2bdae" stroke-width="9"/>
+  </g>
+  <path d="M310 128c48-35 88-26 119 1 36-32 89-28 151 3v128H310z" fill="#adb6ad" opacity=".45"/>
+  <path d="M240 430h450v8H240z" fill="#b5ad9e"/>
+  <g>
+    <path d="M730 419h330v173H730z" fill="#28282a"/>
+    <path d="M755 365h286v196H755c-21 0-38-17-38-38V403c0-21 17-38 38-38Z" fill="#77736b"/>
+    <path d="M781 389h115v74H755v-48c0-14 12-26 26-26Zm138 0h96c14 0 26 12 26 26v48H919z" fill="#938d82"/>
+    <path d="M755 470h286v66H755z" fill="#6b675f"/>
+    <path d="M776 533v62m242-62v62" stroke="#28282a" stroke-width="13"/>
+  </g>
+  <path d="M707 412c89-16 219-11 350 0l-15 177c-83 28-225 27-320-4z" fill="url(#cloth)"/>
+  <path d="M730 425c79 22 179 28 306 4m-302 62c106 22 197 24 303 5m-306 61c101 23 202 20 303 7" fill="none" stroke="#918b80" stroke-width="3" opacity=".42"/>
+  <g transform="translate(1000 178)">
+    <path d="M0 300h112" stroke="#4a4945" stroke-width="7"/>
+    <path d="M38 295c-14-55-8-112 3-167 8-38 25-71 40-94" fill="none" stroke="#524d42" stroke-width="7"/>
+    <path d="M76 84c-3-50 13-72 45-82-2 43-14 71-45 82Zm-21 39c-42-10-60-34-55-70 35 15 54 35 55 70Zm14 45c-10-41 0-69 32-87 5 38-3 66-32 87Zm-18 25c-37-15-51-40-40-73 31 19 45 42 40 73Z" fill="#555e4d" stroke="#353d32" stroke-width="4"/>
+  </g>
+  <g transform="translate(90 425)">
+    <path d="M70 0h80v120H70z" fill="#29292b"/>
+    <path d="M60 4h100v8H60z" fill="#ffc400"/>
+    <path d="M58 120h104m-83 0v86m61-86v86" fill="none" stroke="#363533" stroke-width="8"/>
+    <path d="M32 207h157" stroke="#ffc400" stroke-width="7"/>
+    <path d="M103 18v87" stroke="#f4efe3" stroke-width="3" opacity=".65"/>
+  </g>
+  <path d="M0 0h1200v820H0z" fill="none" stroke="#ffc400" stroke-width="3" opacity=".55"/>
++</svg>
