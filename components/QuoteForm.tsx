@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { FormEvent } from "react";
 
 const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+const WEB3FORMS_ENDPOINT = "https://api.web3forms.com/submit";
 
 export default function QuoteForm() {
   const [status, setStatus] = useState("");
@@ -32,7 +33,7 @@ export default function QuoteForm() {
     setSending(true);
     setStatus("Sending your estimate request...");
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch(WEB3FORMS_ENDPOINT, {
         method: "POST",
         body: new FormData(form),
       });
@@ -50,7 +51,13 @@ export default function QuoteForm() {
   }
 
   return (
-    <form className="quote-form" onSubmit={submitQuote} encType="multipart/form-data">
+    <form
+      className="quote-form"
+      action={WEB3FORMS_ENDPOINT}
+      method="POST"
+      onSubmit={submitQuote}
+      encType="multipart/form-data"
+    >
       <input type="hidden" name="access_key" value={ACCESS_KEY ?? ""} />
       <input type="hidden" name="subject" value="New estimate request - Steel City Painting & Handyman" />
       <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} aria-hidden="true" />
